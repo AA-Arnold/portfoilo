@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Nav from "../src/components/Nav/Nav.component";
+import Hero from "../src/components/Hero/Hero.component";
 
 export default function Home() {
   return (
@@ -11,7 +12,7 @@ export default function Home() {
       </Head>
 
       <Nav />
-      <main className=" ">  Hello!!!</main>
+      <Hero />
 
       <footer >
         Footer
