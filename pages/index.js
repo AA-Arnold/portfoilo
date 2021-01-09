@@ -2,6 +2,7 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Nav from "../src/components/Nav/Nav.component";
 import Hero from "../src/components/Hero/Hero.component";
+import About from "../src/components/About/About.component"
 
 export default function Home() {
   return (
@@ -12,7 +13,11 @@ export default function Home() {
       </Head>
 
       <Nav />
-      <Hero />
+      <main>
+        <Hero />
+        <About />
+      </main>
+
 
       <footer >
         Footer

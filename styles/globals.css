@@ -14,6 +14,12 @@ a {
 * {
   box-sizing: border-box;
 } */
+
+body {
+  background-color: #150321
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
