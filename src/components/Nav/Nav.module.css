@@ -1,0 +1,8 @@
+.image{
+    position: relative;
+}
+
+.realImage{
+    position: absolute;
+    top: 0;
+}
