@@ -1,4 +1,5 @@
 import styles from './Hero.module.css'
+import Heroo from '../../../assets/hero.svg'
 
 export default function Hero(){
     return(
@@ -15,6 +16,10 @@ export default function Hero(){
                 <img src='hero.svg' width='700px' alt="An SVG of a male using a laptop" />
             </div>
          </div>
+
+
+         {/* example of adding svg  */}
+         {/* <Heroo width={800} height={800} fill={'red'} /> */}
 
      </main>
     )
