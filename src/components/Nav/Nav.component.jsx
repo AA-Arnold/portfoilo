@@ -5,7 +5,7 @@ import Sun from '../../../assets/sun.svg'
 
 export default function Nav(){
     return(
-        <header className='py-6 flex items-center px-5 w-full mx-auto bg-purple-sec'>
+        <header className='py-6 flex items-center px-5 w-full mx-auto fixed bg-purple-sec'>
             <Link href='/'>
                 <a aria-current='page' className="flex items-center text-purple-high font-bold text-lg mr-6 border:0">
                     <div className={`${styles.image} overflow-hidden inline-block w-10 h-10 mr-2 rounded-full border-2 border-purple-high`}>
@@ -16,6 +16,9 @@ export default function Nav(){
             </Link>
             <div className='flex-1'></div>
             <nav>
+
+                {/*-------------------------------- top nav ---------------------------------------*/}
+
                     <div className='flex flex-col sm:flex-row items-center'>
                         <ul className="top-navigation items-center flex-wrap space-x-4 sm:space-x-6 sm:mt-0 w-full items-center justify-end">
                             <li className="inline-block text-lg sm:text-base">
@@ -51,13 +54,6 @@ export default function Nav(){
                                     </a>
                                 </Link>
                             </li>
-                                <li className="hidden sm:inline-block">
-                                    <Link href='/'>
-                                        <a href="" className="blog border-b-2 font-bold border-transparent border-b-transparent text-white hover:border-light-secondary dark:text-dark-primary dark-hover:border-dark-secondary text-base transition-all transition-duration-300 transition duration-500 ease-in-out">
-                                        Blog
-                                        </a>
-                                    </Link>
-                                </li>
                                 
                                 <li className="hidden sm:inline-block">
                                     <Link href='/'>
@@ -81,6 +77,72 @@ export default function Nav(){
                                     </Link>
                                 </li>
                         </ul>
+                    </div>
+
+
+                     {/*-------------------------------- bottom nav ---------------------------------------*/}
+
+                    <div className='bottom-navigation fixed bottom-0 left-0 z-20 bg-purple-sec dark:bg-dark-elevatedSurface w-full flex items-center justify-evenly sm:hidden h-20" style="box-shadow:0 -10px 10px rgba(0,0,0,.2)'>
+                        <li className='nav-bar-bottom-item text-white dark:text-dark-secondary font-bold'>
+                            <Link href=''>
+                                <a className="flex flex-col items-center justify-center flex-nowrap transition transition-all duration-500 ease-in-out">
+                                    <Sun/>
+                                    <div>
+                                        Home
+                                    </div>
+                                </a>
+                            </Link>
+                        </li>
+                        <li className='nav-bar-bottom-item text-white dark:text-dark-secondary font-bold'>
+                            <Link href=''>
+                                <a className="flex flex-col items-center justify-center flex-nowrap transition transition-all duration-500 ease-in-out">
+                                    <Moon/>
+                                    <div>
+                                        About
+                                    </div>
+                                </a>
+                            </Link>
+                        </li>
+                        <li className='nav-bar-bottom-item text-white dark:text-dark-secondary font-bold'>
+                            <Link href=''>
+                                <a className="flex flex-col items-center justify-center flex-nowrap transition transition-all duration-500 ease-in-out">
+                                    <Moon/>
+                                    <div>
+                                        Skills
+                                    </div>
+                                </a>
+                            </Link>
+                        </li>
+                        <li className='nav-bar-bottom-item text-white dark:text-dark-secondary font-bold'>
+                            <Link href=''>
+                                <a className="flex flex-col items-center justify-center flex-nowrap transition transition-all duration-500 ease-in-out">
+                                    <Moon/>
+                                    <div>
+                                        Project
+                                    </div>
+                                </a>
+                            </Link>
+                        </li>
+                        <li className='nav-bar-bottom-item text-white dark:text-dark-secondary font-bold'>
+                            <Link href=''>
+                                <a className="flex flex-col items-center justify-center flex-nowrap transition transition-all duration-500 ease-in-out">
+                                    <Moon/>
+                                    <div>
+                                        Blog
+                                    </div>
+                                </a>
+                            </Link>
+                        </li>
+                        <li className='nav-bar-bottom-item text-white dark:text-dark-secondary font-bold'>
+                            <Link href=''>
+                                <a className="flex flex-col items-center justify-center flex-nowrap transition transition-all duration-500 ease-in-out">
+                                    <Moon/>
+                                    <div>
+                                        Contact
+                                    </div>
+                                </a>
+                            </Link>
+                        </li>
                     </div>
             </nav>
         </header>
