@@ -2,10 +2,17 @@ import Link from 'next/link'
 import styles from './Nav.module.css'
 import Moon from '../../../assets/moon.svg'
 import Sun from '../../../assets/sun.svg'
+import Home from '../../../assets/home.svg'
+import About from '../../../assets/help-circle.svg'
+import Skills from '../../../assets/tool.svg'
+import Project from '../../../assets/code.svg'
+import Blog from '../../../assets/edit.svg'
+import Contact from '../../../assets/mail.svg'
+
 
 export default function Nav(){
     return(
-        <header className='py-6 flex items-center px-5 w-full mx-auto fixed bg-purple-sec'>
+        <header className='py-6 flex items-center px-5 w-full mx-auto fixed z-10 bg-purple-sec'>
             <Link href='/'>
                 <a aria-current='page' className="flex items-center text-purple-high font-bold text-lg mr-6 border:0">
                     <div className={`${styles.image} overflow-hidden inline-block w-10 h-10 mr-2 rounded-full border-2 border-purple-high`}>
@@ -83,20 +90,20 @@ export default function Nav(){
                      {/*-------------------------------- bottom nav ---------------------------------------*/}
 
                     <div className='bottom-navigation fixed bottom-0 left-0 z-20 bg-purple-sec dark:bg-dark-elevatedSurface w-full flex items-center justify-evenly sm:hidden h-20" style="box-shadow:0 -10px 10px rgba(0,0,0,.2)'>
-                        <li className='nav-bar-bottom-item text-white dark:text-dark-secondary font-bold'>
+                        <li className='nav-bar-bottom-item text-purple-txt dark:text-dark-secondary font-bold'>
                             <Link href=''>
                                 <a className="flex flex-col items-center justify-center flex-nowrap transition transition-all duration-500 ease-in-out">
-                                    <Sun/>
+                                    <Home/>
                                     <div>
                                         Home
                                     </div>
                                 </a>
                             </Link>
                         </li>
-                        <li className='nav-bar-bottom-item text-white dark:text-dark-secondary font-bold'>
+                        <li className='nav-bar-bottom-item text-purple-high dark:text-dark-secondary font-bold'>
                             <Link href=''>
                                 <a className="flex flex-col items-center justify-center flex-nowrap transition transition-all duration-500 ease-in-out">
-                                    <Moon/>
+                                    <About/>
                                     <div>
                                         About
                                     </div>
@@ -106,7 +113,7 @@ export default function Nav(){
                         <li className='nav-bar-bottom-item text-white dark:text-dark-secondary font-bold'>
                             <Link href=''>
                                 <a className="flex flex-col items-center justify-center flex-nowrap transition transition-all duration-500 ease-in-out">
-                                    <Moon/>
+                                    <Skills/>
                                     <div>
                                         Skills
                                     </div>
@@ -116,9 +123,9 @@ export default function Nav(){
                         <li className='nav-bar-bottom-item text-white dark:text-dark-secondary font-bold'>
                             <Link href=''>
                                 <a className="flex flex-col items-center justify-center flex-nowrap transition transition-all duration-500 ease-in-out">
-                                    <Moon/>
+                                    <Project/>
                                     <div>
-                                        Project
+                                        Projects
                                     </div>
                                 </a>
                             </Link>
@@ -126,7 +133,7 @@ export default function Nav(){
                         <li className='nav-bar-bottom-item text-white dark:text-dark-secondary font-bold'>
                             <Link href=''>
                                 <a className="flex flex-col items-center justify-center flex-nowrap transition transition-all duration-500 ease-in-out">
-                                    <Moon/>
+                                    <Blog/>
                                     <div>
                                         Blog
                                     </div>
@@ -136,7 +143,7 @@ export default function Nav(){
                         <li className='nav-bar-bottom-item text-white dark:text-dark-secondary font-bold'>
                             <Link href=''>
                                 <a className="flex flex-col items-center justify-center flex-nowrap transition transition-all duration-500 ease-in-out">
-                                    <Moon/>
+                                    <Contact/>
                                     <div>
                                         Contact
                                     </div>
