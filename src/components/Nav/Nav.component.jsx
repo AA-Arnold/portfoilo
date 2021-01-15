@@ -32,41 +32,54 @@ export default function Nav(){
                             
                             <li className="hidden sm:inline-block">
                                 <Link href='/'>
-                                    <a href="" class="blog border-b-2 font-bold border-transparent border-b-transparent text-white hover:border-light-secondary dark:text-dark-primary dark-hover:border-dark-secondary text-base transition-all transition-duration-300 transition duration-500 ease-in-out">
+                                    <a href="" className="blog border-b-2 font-bold border-transparent border-b-transparent text-white hover:border-light-secondary dark:text-dark-primary dark-hover:border-dark-secondary text-base transition-all transition-duration-300 transition duration-500 ease-in-out">
                                        Home
                                     </a>
                                 </Link>
+                            </li>
+                            <li className="hidden sm:inline-block">
                                 <Link href='/'>
-                                    <a href="" class="blog border-b-2 font-bold border-transparent border-b-transparent text-white hover:border-light-secondary dark:text-dark-primary dark-hover:border-dark-secondary text-base transition-all transition-duration-300 transition duration-500 ease-in-out">
+                                    <a href="" className="blog border-b-2 font-bold border-transparent border-b-transparent text-white hover:border-light-secondary dark:text-dark-primary dark-hover:border-dark-secondary text-base transition-all transition-duration-300 transition duration-500 ease-in-out">
                                        About
                                     </a>
                                 </Link>
+                            </li>
+                            <li className="hidden sm:inline-block">
                                 <Link href='/'>
-                                    <a href="" class="blog border-b-2 font-bold border-transparent border-b-transparent text-white hover:border-light-secondary dark:text-dark-primary dark-hover:border-dark-secondary text-base transition-all transition-duration-300 transition duration-500 ease-in-out">
-                                       SKills
-                                    </a>
-                                </Link>
-                                <Link href='/'>
-                                    <a href="" class="blog border-b-2 font-bold border-transparent border-b-transparent text-white hover:border-light-secondary dark:text-dark-primary dark-hover:border-dark-secondary text-base transition-all transition-duration-300 transition duration-500 ease-in-out">
-                                       Blog
-                                    </a>
-                                </Link>
-                                <Link href='/'>
-                                    <a href="" class="blog border-b-2 font-bold border-transparent border-b-transparent text-white hover:border-light-secondary dark:text-dark-primary dark-hover:border-dark-secondary text-base transition-all transition-duration-300 transition duration-500 ease-in-out">
-                                       Project
-                                    </a>
-                                </Link>
-                                <Link href='/'>
-                                    <a href="" class="blog border-b-2 font-bold border-transparent border-b-transparent text-white hover:border-light-secondary dark:text-dark-primary dark-hover:border-dark-secondary text-base transition-all transition-duration-300 transition duration-500 ease-in-out">
-                                       Blog
-                                    </a>
-                                </Link>
-                                <Link href='/'>
-                                    <a href="" class="blog border-b-2 font-bold border-transparent border-b-transparent text-white hover:border-light-secondary dark:text-dark-primary dark-hover:border-dark-secondary text-base transition-all transition-duration-300 transition duration-500 ease-in-out">
-                                       Contact
+                                    <a href="" className="blog border-b-2 font-bold border-transparent border-b-transparent text-white hover:border-light-secondary dark:text-dark-primary dark-hover:border-dark-secondary text-base transition-all transition-duration-300 transition duration-500 ease-in-out">
+                                       Skills
                                     </a>
                                 </Link>
                             </li>
+                                <li className="hidden sm:inline-block">
+                                    <Link href='/'>
+                                        <a href="" className="blog border-b-2 font-bold border-transparent border-b-transparent text-white hover:border-light-secondary dark:text-dark-primary dark-hover:border-dark-secondary text-base transition-all transition-duration-300 transition duration-500 ease-in-out">
+                                        Blog
+                                        </a>
+                                    </Link>
+                                </li>
+                                
+                                <li className="hidden sm:inline-block">
+                                    <Link href='/'>
+                                        <a href="" className="blog border-b-2 font-bold border-transparent border-b-transparent text-white hover:border-light-secondary dark:text-dark-primary dark-hover:border-dark-secondary text-base transition-all transition-duration-300 transition duration-500 ease-in-out">
+                                        Project
+                                        </a>
+                                    </Link>
+                                </li>
+                                <li className="hidden sm:inline-block">
+                                    <Link href='/'>
+                                        <a href="" className="blog border-b-2 font-bold border-transparent border-b-transparent text-white hover:border-light-secondary dark:text-dark-primary dark-hover:border-dark-secondary text-base transition-all transition-duration-300 transition duration-500 ease-in-out">
+                                        Blog
+                                        </a>
+                                    </Link>
+                                </li>
+                                <li className="hidden sm:inline-block">
+                                    <Link href='/'>
+                                        <a href="" className="blog border-b-2 font-bold border-transparent border-b-transparent text-white hover:border-light-secondary dark:text-dark-primary dark-hover:border-dark-secondary text-base transition-all transition-duration-300 transition duration-500 ease-in-out">
+                                        Contact
+                                        </a>
+                                    </Link>
+                                </li>
                         </ul>
                     </div>
             </nav>
