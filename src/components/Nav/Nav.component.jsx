@@ -10,11 +10,30 @@ import Blog from '../../../assets/edit.svg'
 import Contact from '../../../assets/mail.svg'
 
 
+import { useEffect, useState } from "react";
+
+import { useTheme } from "next-themes";
+
+
 export default function Nav(){
+
+
+    const [isMounted, setIsMounted] = useState(false);
+    const { theme, setTheme } = useTheme();
+  useEffect(() => {
+      setIsMounted(true);
+    }, []);
+  const switchTheme = () => {
+      if (isMounted) {
+        setTheme(theme === "light" ? "dark" : "light");
+      }
+    };
+
+
     return(
         <header className='py-6 flex items-center px-5 w-full mx-auto fixed z-10 bg-purple-sec'>
             <Link href='/'>
-                <a aria-current='page' className="flex items-center text-purple-high font-bold text-lg mr-6 border:0">
+                <a aria-current='page' className="flex items-center text-white  dark:text-purple-high font-bold text-lg mr-6 border:0">
                     <div className={`${styles.image} overflow-hidden inline-block w-10 h-10 mr-2 rounded-full border-2 border-purple-high`}>
                         <img src='arnold.jpeg' alt="Profile picture of Amasoh Asama Arnold" className={`object-cover h-full ${styles.realImage}`}/>
                     </div>
@@ -29,7 +48,7 @@ export default function Nav(){
                     <div className='flex flex-col sm:flex-row items-center'>
                         <ul className="top-navigation items-center flex-wrap space-x-4 sm:space-x-6 sm:mt-0 w-full items-center justify-end">
                             <li className="inline-block text-lg sm:text-base">
-                                <button aria-label="Enable light mode" className="text-orange-400 transition-colors duration-300 ease-linear focus:outline-none">
+                                <button onClick={switchTheme} aria-label="Enable light mode" className="text-orange-400 transition-colors duration-300 ease-linear focus:outline-none">
                                     <span className="hidden">
                                         <Moon/>
                                     </span> 
