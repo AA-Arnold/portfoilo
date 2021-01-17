@@ -8,6 +8,7 @@ module.exports = {
         'purple-sec': '#260B37',
         'purple-high': '#C306F1',
         'purple-txt': '#AF97BF',
+        'green-high': '#0EB108',
       },
     },
   },

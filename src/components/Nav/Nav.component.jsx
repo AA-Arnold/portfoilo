@@ -15,6 +15,7 @@ import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 
 
+
 export default function Nav(){
 
 
@@ -29,12 +30,11 @@ export default function Nav(){
       }
     };
 
-
     return(
-        <header className='py-6 flex items-center px-5 w-full mx-auto fixed z-10 bg-purple-sec'>
+        <header className='py-6 flex items-center px-5 w-full mx-auto fixed z-10 bg-white dark:bg-purple-sec'>
             <Link href='/'>
-                <a aria-current='page' className="flex items-center text-white  dark:text-purple-high font-bold text-lg mr-6 border:0">
-                    <div className={`${styles.image} overflow-hidden inline-block w-10 h-10 mr-2 rounded-full border-2 border-purple-high`}>
+                <a aria-current='page' className="flex items-center text-green-high  dark:text-purple-high font-bold text-lg mr-6 border:0">
+                    <div className={`${styles.image} overflow-hidden inline-block w-10 h-10 mr-2 rounded-full border-2 border-green-high dark:border-purple-high`}>
                         <img src='arnold.jpeg' alt="Profile picture of Amasoh Asama Arnold" className={`object-cover h-full ${styles.realImage}`}/>
                     </div>
                     <span>Amasoh Arnold</span>
@@ -42,13 +42,58 @@ export default function Nav(){
             </Link>
             <div className='flex-1'></div>
             <nav>
-
                 {/*-------------------------------- top nav ---------------------------------------*/}
 
                     <div className='flex flex-col sm:flex-row items-center'>
                         <ul className="top-navigation items-center flex-wrap space-x-4 sm:space-x-6 sm:mt-0 w-full items-center justify-end">
-                            <li className="inline-block text-lg sm:text-base">
-                                <button onClick={switchTheme} aria-label="Enable light mode" className="text-orange-400 transition-colors duration-300 ease-linear focus:outline-none">
+
+                            
+                            <li className="hidden sm:inline-block">
+                                <Link href='/'>
+                                    <a href="" className="blog border-b-2 font-bold border-transparent border-b-transparent text-green hover:border-light-secondary dark:text-white dark-hover:border-dark-secondary text-base transition-all transition-duration-300 transition duration-500 ease-in-out">
+                                       Home
+                                    </a>
+                                </Link>
+                            </li>
+                            <li className="hidden sm:inline-block">
+                                <Link href='/'>
+                                    <a href="" className="blog border-b-2 font-bold border-transparent border-b-transparent text-green hover:border-light-secondary dark:text-white dark-hover:border-dark-secondary text-base transition-all transition-duration-300 transition duration-500 ease-in-out">
+                                       About
+                                    </a>
+                                </Link>
+                            </li>
+                            <li className="hidden sm:inline-block">
+                                <Link href='/'>
+                                    <a href="" className="blog border-b-2 font-bold border-transparent border-b-transparent text-green hover:border-light-secondary dark:text-white dark-hover:border-dark-secondary text-base transition-all transition-duration-300 transition duration-500 ease-in-out">
+                                       Skills
+                                    </a>
+                                </Link>
+                            </li>
+                                
+                                <li className="hidden sm:inline-block">
+                                    <Link href='/'>
+                                        <a href="" className="blog border-b-2 font-bold border-transparent border-b-transparent text-green hover:border-light-secondary dark:text-white dark-hover:border-dark-secondary text-base transition-all transition-duration-300 transition duration-500 ease-in-out">
+                                        Project
+                                        </a>
+                                    </Link>
+                                </li>
+                                <li className="hidden sm:inline-block">
+                                    <Link href='/'>
+                                        <a href="" className="blog border-b-2 font-bold border-transparent border-b-transparent text-green hover:border-light-secondary dark:text-white dark-hover:border-dark-secondary text-base transition-all transition-duration-300 transition duration-500 ease-in-out">
+                                        Blog
+                                        </a>
+                                    </Link>
+                                </li>
+                                <li className="hidden sm:inline-block">
+                                    <Link href='/'>
+                                        <a href="" className="blog border-b-2 font-bold border-transparent border-b-transparent text-green hover:border-light-secondary dark:text-white dark-hover:border-dark-secondary text-base transition-all transition-duration-300 transition duration-500 ease-in-out">
+                                        Contact
+                                        </a>
+                                    </Link>
+                                </li>
+
+                                <li className="inline-block text-lg sm:text-base ">
+                                <button onClick={switchTheme}  className="text-orange-400 transition-colors duration-300 ease-linear focus:outline-none">
                                     <span className="hidden">
                                         <Moon/>
                                     </span> 
@@ -58,57 +103,13 @@ export default function Nav(){
                                     </span>
                                </button>
                             </li>
-                            
-                            <li className="hidden sm:inline-block">
-                                <Link href='/'>
-                                    <a href="" className="blog border-b-2 font-bold border-transparent border-b-transparent text-white hover:border-light-secondary dark:text-dark-primary dark-hover:border-dark-secondary text-base transition-all transition-duration-300 transition duration-500 ease-in-out">
-                                       Home
-                                    </a>
-                                </Link>
-                            </li>
-                            <li className="hidden sm:inline-block">
-                                <Link href='/'>
-                                    <a href="" className="blog border-b-2 font-bold border-transparent border-b-transparent text-white hover:border-light-secondary dark:text-dark-primary dark-hover:border-dark-secondary text-base transition-all transition-duration-300 transition duration-500 ease-in-out">
-                                       About
-                                    </a>
-                                </Link>
-                            </li>
-                            <li className="hidden sm:inline-block">
-                                <Link href='/'>
-                                    <a href="" className="blog border-b-2 font-bold border-transparent border-b-transparent text-white hover:border-light-secondary dark:text-dark-primary dark-hover:border-dark-secondary text-base transition-all transition-duration-300 transition duration-500 ease-in-out">
-                                       Skills
-                                    </a>
-                                </Link>
-                            </li>
-                                
-                                <li className="hidden sm:inline-block">
-                                    <Link href='/'>
-                                        <a href="" className="blog border-b-2 font-bold border-transparent border-b-transparent text-white hover:border-light-secondary dark:text-dark-primary dark-hover:border-dark-secondary text-base transition-all transition-duration-300 transition duration-500 ease-in-out">
-                                        Project
-                                        </a>
-                                    </Link>
-                                </li>
-                                <li className="hidden sm:inline-block">
-                                    <Link href='/'>
-                                        <a href="" className="blog border-b-2 font-bold border-transparent border-b-transparent text-white hover:border-light-secondary dark:text-dark-primary dark-hover:border-dark-secondary text-base transition-all transition-duration-300 transition duration-500 ease-in-out">
-                                        Blog
-                                        </a>
-                                    </Link>
-                                </li>
-                                <li className="hidden sm:inline-block">
-                                    <Link href='/'>
-                                        <a href="" className="blog border-b-2 font-bold border-transparent border-b-transparent text-white hover:border-light-secondary dark:text-dark-primary dark-hover:border-dark-secondary text-base transition-all transition-duration-300 transition duration-500 ease-in-out">
-                                        Contact
-                                        </a>
-                                    </Link>
-                                </li>
                         </ul>
                     </div>
 
 
                      {/*-------------------------------- bottom nav ---------------------------------------*/}
 
-                    <div className='bottom-navigation fixed bottom-0 left-0 z-20 bg-purple-sec dark:bg-dark-elevatedSurface w-full flex items-center justify-evenly sm:hidden h-20" style="box-shadow:0 -10px 10px rgba(0,0,0,.2)'>
+                    <ul className={`${styles.bottomNavigation} fixed bottom-0 left-0 z-20  bg-white dark:bg-purple-sec w-full flex items-center justify-evenly sm:hidden h-20`}>
                         <li className='nav-bar-bottom-item text-purple-txt dark:text-dark-secondary font-bold'>
                             <Link href=''>
                                 <a className="flex flex-col items-center justify-center flex-nowrap transition transition-all duration-500 ease-in-out">
@@ -132,7 +133,7 @@ export default function Nav(){
                         <li className='nav-bar-bottom-item text-white dark:text-dark-secondary font-bold'>
                             <Link href=''>
                                 <a className="flex flex-col items-center justify-center flex-nowrap transition transition-all duration-500 ease-in-out">
-                                    <Skills/>
+                                    <Skills stroke={(theme === 'dark') ? '#AF97BF' : '#0EB108'}/>
                                     <div>
                                         Skills
                                     </div>
@@ -169,7 +170,7 @@ export default function Nav(){
                                 </a>
                             </Link>
                         </li>
-                    </div>
+                    </ul>
             </nav>
         </header>
     )
