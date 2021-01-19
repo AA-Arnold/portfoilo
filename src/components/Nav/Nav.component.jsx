@@ -18,6 +18,12 @@ import { useTheme } from "next-themes";
 
 export default function Nav(){
 
+    const [homeState, setHomeState] = useState('Home')
+    const [aboutState, setAboutState] = useState('About')
+    const [skillsState, setSkillsState] = useState('Skills')
+    const [projectState, setProjectState] = useState('Project')
+    const [blogState, setBlogState] = useState('Blog')
+    const [contactState, setContactState] = useState('Contact')
 
     const [isMounted, setIsMounted] = useState(false);
     const { theme, setTheme } = useTheme();
@@ -48,46 +54,46 @@ export default function Nav(){
                         <ul className="top-navigation items-center flex-wrap space-x-4 sm:space-x-6 sm:mt-0 w-full items-center justify-end">
 
                             
-                            <li className="hidden sm:inline-block">
+                            <li  className="hidden sm:inline-block">
                                 <Link href='/'>
-                                    <a href="" className="blog border-b-2 font-bold border-transparent border-b-transparent text-green hover:border-light-secondary dark:text-white dark-hover:border-dark-secondary text-base transition-all transition-duration-300 transition duration-500 ease-in-out">
-                                       Home
+                                    <a onMouseOver={()=>setHomeState(<Home/>)} onMouseOut={()=>setHomeState('Home')} href="" className="blog border-b-2 font-bold border-transparent border-b-transparent text-green hover:border-light-secondary dark:text-white dark-hover:border-dark-secondary text-base transition-all transition-duration-300 transition duration-500 ease-in-out">
+                                       {homeState}
                                     </a>
                                 </Link>
                             </li>
                             <li className="hidden sm:inline-block">
                                 <Link href='/'>
-                                    <a href="" className="blog border-b-2 font-bold border-transparent border-b-transparent text-green hover:border-light-secondary dark:text-white dark-hover:border-dark-secondary text-base transition-all transition-duration-300 transition duration-500 ease-in-out">
-                                       About
+                                    <a href="" onMouseOver={()=>setAboutState(<About/>)} onMouseOut={()=>setAboutState('About')} className="blog border-b-2 font-bold border-transparent border-b-transparent text-green hover:border-light-secondary dark:text-white dark-hover:border-dark-secondary text-base transition-all transition-duration-300 transition duration-500 ease-in-out">
+                                       {aboutState}
                                     </a>
                                 </Link>
                             </li>
                             <li className="hidden sm:inline-block">
                                 <Link href='/'>
-                                    <a href="" className="blog border-b-2 font-bold border-transparent border-b-transparent text-green hover:border-light-secondary dark:text-white dark-hover:border-dark-secondary text-base transition-all transition-duration-300 transition duration-500 ease-in-out">
-                                       Skills
+                                    <a href="" onMouseOver={()=>setSkillsState(<Skills/>)} onMouseOut={()=>setSkillsState('Skills')} className="blog border-b-2 font-bold border-transparent border-b-transparent text-green hover:border-light-secondary dark:text-white dark-hover:border-dark-secondary text-base transition-all transition-duration-300 transition duration-500 ease-in-out">
+                                       {skillsState}
                                     </a>
                                 </Link>
                             </li>
                                 
                                 <li className="hidden sm:inline-block">
                                     <Link href='/'>
-                                        <a href="" className="blog border-b-2 font-bold border-transparent border-b-transparent text-green hover:border-light-secondary dark:text-white dark-hover:border-dark-secondary text-base transition-all transition-duration-300 transition duration-500 ease-in-out">
-                                        Project
+                                        <a href="" onMouseOver={()=>setProjectState(<Project/>)} onMouseOut={()=>setProjectState('Project')} className="blog border-b-2 font-bold border-transparent border-b-transparent text-green hover:border-light-secondary dark:text-white dark-hover:border-dark-secondary text-base transition-all transition-duration-300 transition duration-500 ease-in-out">
+                                        {projectState}
                                         </a>
                                     </Link>
                                 </li>
                                 <li className="hidden sm:inline-block">
                                     <Link href='/'>
-                                        <a href="" className="blog border-b-2 font-bold border-transparent border-b-transparent text-green hover:border-light-secondary dark:text-white dark-hover:border-dark-secondary text-base transition-all transition-duration-300 transition duration-500 ease-in-out">
-                                        Blog
+                                        <a href="" onMouseOver={()=>setBlogState(<Blog/>)} onMouseOut={()=>setBlogState('Blog')} className="blog border-b-2 font-bold border-transparent border-b-transparent text-green hover:border-light-secondary dark:text-white dark-hover:border-dark-secondary text-base transition-all transition-duration-300 transition duration-500 ease-in-out">
+                                        {blogState}
                                         </a>
                                     </Link>
                                 </li>
                                 <li className="hidden sm:inline-block">
                                     <Link href='/'>
-                                        <a href="" className="blog border-b-2 font-bold border-transparent border-b-transparent text-green hover:border-light-secondary dark:text-white dark-hover:border-dark-secondary text-base transition-all transition-duration-300 transition duration-500 ease-in-out">
-                                        Contact
+                                        <a href="" onMouseOver={()=>setContactState(<Contact/>)} onMouseOut={()=>setContactState('Contact')} className="blog border-b-2 font-bold border-transparent border-b-transparent text-green hover:border-light-secondary dark:text-white dark-hover:border-dark-secondary text-base transition-all transition-duration-300 transition duration-500 ease-in-out">
+                                        {contactState}
                                         </a>
                                     </Link>
                                 </li>
@@ -110,27 +116,27 @@ export default function Nav(){
                      {/*-------------------------------- bottom nav ---------------------------------------*/}
 
                     <ul className={`${styles.bottomNavigation} fixed bottom-0 left-0 z-20  bg-white dark:bg-purple-sec w-full flex items-center justify-evenly sm:hidden h-20`}>
-                        <li className='nav-bar-bottom-item text-purple-txt dark:text-dark-secondary font-bold'>
+                        <li className='nav-bar-bottom-item text-green-high dark:text-purple-txt font-bold'>
                             <Link href=''>
                                 <a className="flex flex-col items-center justify-center flex-nowrap transition transition-all duration-500 ease-in-out">
-                                    <Home/>
+                                    <Home stroke={(theme === 'dark') ? '#AF97BF' : '#0EB108'}/>
                                     <div>
                                         Home
                                     </div>
                                 </a>
                             </Link>
                         </li>
-                        <li className='nav-bar-bottom-item text-purple-high dark:text-dark-secondary font-bold'>
+                        <li className='nav-bar-bottom-item text-green-high dark:text-purple-txt font-bold'>
                             <Link href=''>
                                 <a className="flex flex-col items-center justify-center flex-nowrap transition transition-all duration-500 ease-in-out">
-                                    <About/>
+                                    <About stroke={(theme === 'dark') ? '#AF97BF' : '#0EB108'}/>
                                     <div>
                                         About
                                     </div>
                                 </a>
                             </Link>
                         </li>
-                        <li className='nav-bar-bottom-item text-white dark:text-dark-secondary font-bold'>
+                        <li className='nav-bar-bottom-item text-green-high dark:text-purple-txt font-bold'>
                             <Link href=''>
                                 <a className="flex flex-col items-center justify-center flex-nowrap transition transition-all duration-500 ease-in-out">
                                     <Skills stroke={(theme === 'dark') ? '#AF97BF' : '#0EB108'}/>
@@ -140,30 +146,30 @@ export default function Nav(){
                                 </a>
                             </Link>
                         </li>
-                        <li className='nav-bar-bottom-item text-white dark:text-dark-secondary font-bold'>
+                        <li className='nav-bar-bottom-item text-green-high dark:text-purple-txt font-bold'>
                             <Link href=''>
                                 <a className="flex flex-col items-center justify-center flex-nowrap transition transition-all duration-500 ease-in-out">
-                                    <Project/>
+                                    <Project stroke={(theme === 'dark') ? '#AF97BF' : '#0EB108'}/>
                                     <div>
                                         Projects
                                     </div>
                                 </a>
                             </Link>
                         </li>
-                        <li className='nav-bar-bottom-item text-white dark:text-dark-secondary font-bold'>
+                        <li className='nav-bar-bottom-item text-green-high dark:text-purple-txt font-bold'>
                             <Link href=''>
                                 <a className="flex flex-col items-center justify-center flex-nowrap transition transition-all duration-500 ease-in-out">
-                                    <Blog/>
+                                    <Blog stroke={(theme === 'dark') ? '#AF97BF' : '#0EB108'}/>
                                     <div>
                                         Blog
                                     </div>
                                 </a>
                             </Link>
                         </li>
-                        <li className='nav-bar-bottom-item text-white dark:text-dark-secondary font-bold'>
+                        <li className='nav-bar-bottom-item text-green-high dark:text-purple-txt font-bold'>
                             <Link href=''>
                                 <a className="flex flex-col items-center justify-center flex-nowrap transition transition-all duration-500 ease-in-out">
-                                    <Contact/>
+                                    <Contact stroke={(theme === 'dark') ? '#AF97BF' : '#0EB108'}/>
                                     <div>
                                         Contact
                                     </div>
