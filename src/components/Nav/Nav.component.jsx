@@ -1,13 +1,13 @@
 import Link from 'next/link'
 import styles from './Nav.module.css'
-import Moon from '../../../assets/moon.svg'
-import Sun from '../../../assets/sun.svg'
-import Home from '../../../assets/home.svg'
-import About from '../../../assets/help-circle.svg'
-import Skills from '../../../assets/tool.svg'
-import Project from '../../../assets/code.svg'
-import Blog from '../../../assets/edit.svg'
-import Contact from '../../../assets/mail.svg'
+import Moon from '../../assets/moon.svg'
+import Sun from '../../assets/sun.svg'
+import Home from '../../assets/home.svg'
+import About from '../../assets/help-circle.svg'
+import Skills from '../../assets/tool.svg'
+import Project from '../../assets/code.svg'
+import Blog from '../../assets/edit.svg'
+import Contact from '../../assets/mail.svg'
 
 
 import { useEffect, useState } from "react";
@@ -42,7 +42,7 @@ export default function Nav(){
             <Link href='/'>
                 <a aria-current='page' className="flex items-center text-green-high  dark:text-purple-high font-bold text-lg mr-6 border:0">
                     <div className={`${styles.image} overflow-hidden inline-block w-10 h-10 mr-2 rounded-full border-2 border-green-high dark:border-purple-high`}>
-                        <img src='arnold.jpeg' alt="Profile picture of Amasoh Asama Arnold" className={`object-cover h-full ${styles.realImage}`}/>
+                        <img src='arnold.jpeg'  alt="Profile picture of Amasoh Asama Arnold" className={`object-cover h-full ${styles.realImage}`}/>
                     </div>
                     <span>Amasoh Arnold</span>
                 </a>
