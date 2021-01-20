@@ -1,5 +1,5 @@
 import styles from './Hero.module.css'
-import Heroo from '../../../assets/hero.svg'
+// import Heroo from '../../../assets/hero.svg'
 
 export default function Hero(){
     return(
