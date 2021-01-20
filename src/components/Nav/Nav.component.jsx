@@ -25,6 +25,7 @@ export default function Nav(){
     const [blogState, setBlogState] = useState('Blog')
     const [contactState, setContactState] = useState('Contact')
 
+
     const [isMounted, setIsMounted] = useState(false);
     const { theme, setTheme } = useTheme();
   useEffect(() => {
@@ -37,7 +38,7 @@ export default function Nav(){
     };
 
     return(
-        <header className='py-6 flex items-center px-5 w-full mx-auto fixed z-10 bg-white dark:bg-purple-sec'>
+        <header className='py-4 flex items-center px-5 w-full mx-auto fixed z-10 bg-white dark:bg-purple-sec'>
             <Link href='/'>
                 <a aria-current='page' className="flex items-center text-green-high  dark:text-purple-high font-bold text-lg mr-6 border:0">
                     <div className={`${styles.image} overflow-hidden inline-block w-10 h-10 mr-2 rounded-full border-2 border-green-high dark:border-purple-high`}>
