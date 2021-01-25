@@ -15,7 +15,7 @@ export default function Home() {
       <Nav />
       <main>
         <Hero />
-        {/* <About /> */}
+        <About />
       </main>
 
 
