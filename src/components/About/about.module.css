@@ -1,0 +1,13 @@
+.animate{
+    animation: dangle 4s ease-in-out infinite alternate;
+}
+
+
+@keyframes dangle{
+    0%{
+        transform: rotate(-2deg);
+    }
+    100%{
+        transform: rotate(2deg);
+    }
+}
