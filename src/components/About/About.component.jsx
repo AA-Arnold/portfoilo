@@ -27,7 +27,15 @@ export default function About(){
 
              {/*------------------------------------------ Right ----------------------------------- */}
 
-             <div className='text-purple-txt w-2/4 ml-5 lg:w-4/6 lg:pl-14'>
+
+             <div className='text-purple-txt w-2/4 ml-5 lg:w-4/6 lg:pl-14 lg:hidden md:hidden'>
+                 Hi i'm Amasoh Arnold, a software developer 
+                 with background in computer science with a focus 
+                 on building fast, responsive, dynamic and intuitive 
+                 user experience and interfaces for web or mobile 
+             </div>
+
+             <div className='hidden text-purple-txt w-2/4 ml-5 lg:w-4/6 lg:pl-14'>
                  Hi i'm Amasoh Arnold, a software developer 
                  with background in computer science with a focus 
                  on building fast, responsive, dynamic and intuitive 
@@ -42,6 +50,20 @@ export default function About(){
                 using a particular tool 
              </div>
          </div>
+               <div className='text-purple-txt lg:hidden'>
+                    Hi i'm Amasoh Arnold, a software developer 
+                    with background in computer science with a focus 
+                    on building fast, responsive, dynamic and intuitive 
+                    user experience and interfaces for web or mobile
+                    i'm based in Lagos, Nigeria. I'm also a certified
+                    web designer from 'HiiT' and I've taken numerous graphic
+                    design courses that has helped me so much in coming up 
+                    withgreat user interfaces I'm very curious about how 
+                    things work which pushes me to explore new technologies
+                    that i find intriuging that is taylored to my domain 
+                    helping me gain insights on merits and demerits of 
+                    using a particular tool 
+                </div>
      </div>
     )
 }
