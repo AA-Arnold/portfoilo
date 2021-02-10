@@ -35,7 +35,7 @@ export default function About(){
                  user experience and interfaces for web or mobile 
              </div>
 
-             <div className='hidden text-purple-txt w-2/4 ml-5 lg:w-4/6 lg:pl-14'>
+             <div className='hidden md:block text-purple-txt w-2/4 ml-5 lg:w-4/6 lg:pl-14'>
                  Hi i'm Amasoh Arnold, a software developer 
                  with background in computer science with a focus 
                  on building fast, responsive, dynamic and intuitive 
@@ -50,7 +50,7 @@ export default function About(){
                 using a particular tool 
              </div>
          </div>
-               <div className='text-purple-txt lg:hidden'>
+               <div className='text-purple-txt md:hidden'>
                     Hi i'm Amasoh Arnold, a software developer 
                     with background in computer science with a focus 
                     on building fast, responsive, dynamic and intuitive 
