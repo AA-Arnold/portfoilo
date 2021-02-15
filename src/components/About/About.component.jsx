@@ -1,5 +1,6 @@
 import styles from './about.module.css'
-
+import SimpleSlider from '../slider/slider'
+ 
 export default function About(){
     return(
      <div className='bg-white dark:bg-purple-pry lg:p-16 mb-24'>
@@ -48,6 +49,7 @@ export default function About(){
                 that i find intriuging that is taylored to my domain 
                 helping me gain insights on merits and demerits of 
                 using a particular tool 
+                <div><SimpleSlider/></div>
              </div>
          </div>
                <div className='text-black dark:text-purple-txt p-4 leading-relaxed  md:hidden'>
