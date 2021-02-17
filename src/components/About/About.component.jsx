@@ -49,7 +49,8 @@ export default function About(){
                 that i find intriuging that is taylored to my domain 
                 helping me gain insights on merits and demerits of 
                 using a particular tool 
-                <div><SimpleSlider/></div>
+
+                <SimpleSlider />
              </div>
          </div>
                <div className='text-black dark:text-purple-txt p-4 leading-relaxed  md:hidden'>
