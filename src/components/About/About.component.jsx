@@ -36,7 +36,7 @@ export default function About(){
                     <span className='leading-loose'>waiting for you to connect with me cheers</span>   
              </div>
 
-             <div className='hidden md:block tracking-wider leading-relaxed text-black dark:text-purple-txt w-2/4 ml-5 lg:w-4/6 lg:pl-14'>
+             <div className=' hidden md:block tracking-wider leading-relaxed text-black dark:text-purple-txt w-2/4 ml-5 lg:w-4/6 lg:pl-14'>
                  Hi i'm Amasoh Arnold, a software developer 
                  with background in computer science with a focus 
                  on building fast, responsive, dynamic and intuitive 

@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 
+
 const photo = [
     {
         name: 'photo 1',
@@ -29,36 +30,18 @@ export default class SimpleSlider extends Component {
             slidesToScroll: 1
         };
         return (
-            <div className='mt-4'>
+            <div className='mt-4  '>
                 <h2 className='mb-4'>WHAT CAN I DO?</h2>
                 <Slider {...settings}>
-
-
-                    {photo.map((photo) => {
-                        return (
-                            <div style={{ border: "red" }}>
-                                <img width='65%' src={photo.url} />
-                            </div>
-                        )
-                    })}
-                    {/* <div>
-                        <h3>1</h3>
+                    <div className=''>
+                        <img src='slider11.png' />
                     </div>
                     <div>
-                        <h3>2</h3>
+                        <img src='slider2.png' />
                     </div>
                     <div>
-                        <h3>3</h3>
+                        <img src='slider3.png' />
                     </div>
-                    <div>
-                        <h3>4</h3>
-                    </div>
-                    <div>
-                        <h3>5</h3>
-                    </div>
-                    <div>
-                        <h3>6</h3>
-                    </div> */}
                 </Slider>
             </div>
         );
