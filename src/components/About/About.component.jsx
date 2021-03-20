@@ -67,6 +67,9 @@ export default function About(){
                     helping me gain insights on merits and demerits of 
                     using a particular tool 
                 </div>
+                <div className='w-2/4 md:hidden'>
+                <SimpleSlider />
+                </div>
      </div>
     )
 }

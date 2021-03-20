@@ -30,7 +30,7 @@ export default class SimpleSlider extends Component {
             slidesToScroll: 1
         };
         return (
-            <div className='mt-4  '>
+            <div className='mt-4 text-white font-bold '>
                 <h2 className='mb-4'>WHAT CAN I DO?</h2>
                 <Slider {...settings}>
                     <div className=''>
