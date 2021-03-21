@@ -3,7 +3,7 @@ import SimpleSlider from '../slider/slider'
  
 export default function About(){
     return(
-     <div className='bg-white dark:bg-purple-pry lg:p-16 mb-24'>
+     <div className='bg-white dark:bg-purple-pry lg:p-16'>
          <div className='flex justify-center text-black dark:text-white text-3xl font-bold mb-8 rounded-lg'>About</div>
          <div className='flex '>
 
@@ -67,7 +67,7 @@ export default function About(){
                     helping me gain insights on merits and demerits of 
                     using a particular tool 
                 </div>
-                <div className='w-2/4 md:hidden'>
+                <div className='ml-8 w-4/5 md:hidden'>
                 <SimpleSlider />
                 </div>
      </div>
