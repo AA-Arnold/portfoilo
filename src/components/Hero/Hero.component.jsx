@@ -6,7 +6,7 @@ export default function Hero(){
      <main className='bg-white dark:bg-purple-pry  h-screen  '>
 
          <div className=' lg:flex justify-center pt-28'>
-            <div className='text-black dark:text-white text-2xl lg:text-4xl font-bold ml-8'>
+            <div className='text-black dark:text-white text-2xl lg:text-4xl font-bold ml-8 '>
                 <span className='block mb-4'>Hi !<span className={styles.wave}>👋</span> ,</span>
                 <span className='block mb-4'>I'm Amasoh.A.Arnold,</span>
                 <span className='block mb-4'>Software Developer</span>

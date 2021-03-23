@@ -1,0 +1,209 @@
+
+.skillsTopCircle{
+    position: absolute;  
+    top:0;left:0;right:0;bottom:0;
+    margin: auto;
+    width: 40px;
+    height: 40px; 
+    border-radius: 50%;    
+    background: #fff;    
+    box-shadow: 0 0 50px #FFEB00;
+}
+
+@media (min-width:320px){
+    .skillsCircleWrap{ 
+        width: 320px;
+        height: 400px;  
+        position: relative;
+        margin: 10px auto;
+        pointer-events: fill; 
+        cursor: pointer; 
+      -webkit-transform: perspective(900px);
+      transform: perspective(900px);
+    }
+    .skillsCircle{
+        width: 320px;
+        height: 400px;
+        position: absolute;  
+        top:0;left:0;right:0;bottom:0;
+        margin: auto;
+        border-radius: 50%; 
+        transition: 3s all;
+    }  
+}
+
+@media (min-width:400px){
+    .skillsCircleWrap{ 
+        width: 400px;
+        height: 400px;  
+        position: relative;
+        margin: 10px auto;
+        pointer-events: fill; 
+        cursor: pointer; 
+      -webkit-transform: perspective(900px);
+      transform: perspective(900px);
+    }
+    .skillsCircle{
+        width: 400px;
+        height: 400px;
+        position: absolute;  
+        top:0;left:0;right:0;bottom:0;
+        margin: auto;
+        border-radius: 50%; 
+        transition: 3s all;
+    } 
+}
+
+
+.skillOrbit{
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 50%;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    position: absolute;  
+    top:0;left:0;right:0;bottom:0;
+    margin: auto;  
+  transition: 3s all;
+  transform: perspective(900px);
+}
+.skillOrbit:nth-child(1){
+    width: 100%; height: 100%;   
+}
+.skillOrbit:nth-child(2){
+    width: 82.5%; height: 82.5%; 
+}
+.skillOrbit:nth-child(3){
+    width: 65%; height: 65%;
+}
+.skillOrbit:nth-child(4){
+    width: 47.5%; height: 47.5%;
+}
+.skillOrbit:nth-child(5){
+    width: 30%; height: 30%;
+}
+.skillPlanet{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%; 
+    position: absolute;
+    top:-15px;
+    left:0;right:0;
+    margin: 0 auto; 
+    font-family: Arial;
+    font-weight: 100;
+    text-align: center; 
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    transition: 1s all;
+}
+.skillPlanet span{
+    display: block;
+}
+
+.skillOrbit:nth-child(1) .skillPlanet{
+    background: #A9925F;
+    border:2px solid #FFF9BF;
+    color:#FFF9BF;
+    font-size: 16px;
+    line-height: 26px;
+}
+.skillOrbit:nth-child(2) .skillPlanet{
+    background: #5F6151;
+    border:2px solid #A3B476;
+    color:#A3B476;
+    font-size: 12px;
+    line-height: 26px;
+}
+.skillOrbit:nth-child(3) .skillPlanet{
+    background: #443F35;
+    border:2px solid #C77751;
+    color:#C77751;
+    font-size: 9px;
+    line-height: 26px;
+}
+.skillOrbit:nth-child(4) .skillPlanet{
+    background: #6E391E;
+    border:2px solid #FBAF3F;
+    color:#FBAF3F;
+    font-size: 18px;
+    line-height: 26px;
+}
+.skillOrbit:nth-child(5) .skillPlanet{
+    background: #0064B1;
+    border:2px solid #46BAEB;
+    color:#46BAEB;
+    font-size: 18px;
+    line-height: 26px;
+} 
+.skillOrbit:nth-child(1) .skillPlanet{
+    -webkit-animation: travelOrbit 10s infinite linear;
+    animation: travelOrbit 10s infinite linear;
+    -webkit-transform-origin: 50% 713%;
+    transform-origin: 50% 713%;
+}
+.skillOrbit:nth-child(1) span{
+    -webkit-animation: unrotate 10s infinite linear;
+    animation: unrotate 10s infinite linear;
+}
+.skillOrbit:nth-child(2) .skillPlanet{
+    -webkit-animation: travelOrbit 8s infinite linear;
+    animation: travelOrbit 8s infinite linear;
+    -webkit-transform-origin: 50% 597%;
+    transform-origin: 50% 597%;
+}
+.skillOrbit:nth-child(2) span{
+    -webkit-animation: unrotate 8s infinite linear; 
+    animation: unrotate 8s infinite linear; 
+}
+.skillOrbit:nth-child(3) .skillPlanet{
+    -webkit-animation: travelOrbit 6s infinite linear;
+    animation: travelOrbit 6s infinite linear;
+    -webkit-transform-origin: 50% 480%;
+    transform-origin: 50% 480%;
+}
+.skillOrbit:nth-child(3) span{
+    -webkit-animation: unrotate 6s infinite linear; 
+    animation: unrotate 6s infinite linear; 
+}
+.skillOrbit:nth-child(4) .skillPlanet{
+    -webkit-animation: travelOrbit 4s infinite linear;
+    animation: travelOrbit 4s infinite linear;
+    -webkit-transform-origin: 50% 363%;
+    transform-origin: 50% 363%;
+}
+.skillOrbit:nth-child(4) span{
+    -webkit-animation: unrotate 4s infinite linear; 
+    animation: unrotate 4s infinite linear; 
+}
+.skillOrbit:nth-child(5) .skillPlanet{
+    -webkit-animation: travelOrbit 2s infinite linear;
+    animation: travelOrbit 2s infinite linear;
+    -webkit-transform-origin: 50% 243%;
+    transform-origin: 50% 243%;
+}
+.skillOrbit:nth-child(5) span{
+    -webkit-animation: unrotate 2s infinite linear; 
+    animation: unrotate 2s infinite linear; 
+} 
+@-webkit-keyframes travelOrbit { 
+    0% { -webkit-transform: rotate(0deg); } 
+    100% { -webkit-transform: rotate(360deg); } 
+} 
+@keyframes travelOrbit { 
+    0% { transform: rotate(0deg); } 
+    100% { transform: rotate(360deg); } 
+}
+
+@-webkit-keyframes unrotate { 
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(-360deg); } 
+}  
+@keyframes unrotate { 
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(-360deg); } 
+} 
+
+.skillsCircle:hover{ 
+  -webkit-transform:rotate3d(60,35,0,360deg);
+  transform:rotate3d(60,35,0,360deg);
+}  
