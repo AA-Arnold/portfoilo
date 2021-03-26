@@ -53,7 +53,7 @@ export default function About(){
                 <SimpleSlider />
              </div>
          </div>
-               <div className='text-black dark:text-purple-txt p-4 leading-relaxed  md:hidden'>
+               <div className='text-black dark:text-purple-txt p-4 leading-loose  md:hidden'>
                     Alright adding in a little info. I'm a software developer 👨‍💻
                     with background in computer science 🤖 with a focus 
                     on building fast 🚀, responsive 🖇, dynamic and intuitive 

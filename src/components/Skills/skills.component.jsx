@@ -2,7 +2,7 @@ import styles from './skills.module.css'
 
 export default function Skills(){
     return(
-     <div className='bg-white dark:bg-purple-pry lg:p-16 mb-24'>
+     <div className='bg-white dark:bg-purple-pry lg:p-16 '>
          <div className='flex justify-center text-black dark:text-white text-3xl font-bold md:mb-8 rounded-lg md:mt-0'>Skills</div>
          <div className='md:flex '>
 
