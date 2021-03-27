@@ -44,7 +44,7 @@ export default function About(){
                  i'm based in Lagos, Nigeria. I'm also a certified
                 web designer from 'HiiT' and I've taken numerous graphic
                 design courses that has helped me so much in coming up 
-                withgreat user interfaces I'm very curious about how 
+                with great user interfaces I'm very curious about how 
                 things work which pushes me to explore new technologies
                 that i find intriuging that is taylored to my domain 
                 helping me gain insights on merits and demerits of 

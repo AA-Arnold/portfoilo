@@ -21,7 +21,7 @@ export default function Nav(){
     const [homeState, setHomeState] = useState('Home')
     const [aboutState, setAboutState] = useState('About')
     const [skillsState, setSkillsState] = useState('Skills')
-    const [projectState, setProjectState] = useState('Project')
+    const [projectState, setProjectState] = useState('Projects')
     const [blogState, setBlogState] = useState('Blog')
     const [contactState, setContactState] = useState('Contact')
 
