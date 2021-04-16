@@ -1,3 +1,4 @@
+import Globe from '../../assets/globe.svg'
 import styles from './Project.module.css'
  
 export default function Project(){
@@ -10,8 +11,15 @@ export default function Project(){
                       <div className="inline-block w-6 h-6 rounded-full overflow-hidden flex-shrink-0">
                           <img src="arnold.jpeg" />
                       </div>
-                      <div className="inline-block ...">web</div>
-                      <div className="inline-block ...">mobile</div>
+                      <div className="inline-block w-12 h-12 rounded-full overflow-hidden flex-shrink-0 bg-purple-sec">
+                          <Globe/>
+                    </div>
+                      <div className="inline-block ...">web/laptop 💻</div>
+                      <div className="inline-block ...">mobile 📱</div>
+                      <div className="inline-block ...">Data science / AI 🤖</div>
+                      <div className="inline-block ...">Game 🎮</div>
+                      <div className="inline-block ...">Miscellenous / graphics work 🎨</div>
+
                   </div>
      </div>
     )
