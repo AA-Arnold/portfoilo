@@ -41,11 +41,14 @@ export default function Nav(){
         <header className='py-4 flex items-center px-5 w-full mx-auto fixed z-10 bg-white dark:bg-purple-sec'>
             <Link href='/'>
                 <a aria-current='page' className="flex items-center text-green-high  dark:text-purple-high font-bold text-lg mr-6 border:0">
-                    <div className={`${styles.image} overflow-hidden inline-block w-10 h-10 mr-2 rounded-full border-2 border-green-high dark:border-purple-high`}>
+                    {/* <div className={`${styles.image} overflow-hidden inline-block w-10 h-10 mr-2 rounded-full border-2 border-green-high dark:border-purple-high`}>
                         <img src='arnold.jpeg' width='300px' alt="Profile picture of Amasoh Asama Arnold" className={`object-cover h-full ${styles.realImage}`}/>
-                    </div>
+                    </div> */}
+                    <div className="inline-block w-10 h-10 mr-2 rounded-full overflow-hidden flex-shrink-0 border-2 border-green-high dark:border-purple-high">
+                          <img src="arnold.jpeg" />
+                      </div>
                     <span>Amasoh Arnold</span>
-                </a>
+                </a> 
             </Link>
             <div className='flex-1'></div>
             <nav>
