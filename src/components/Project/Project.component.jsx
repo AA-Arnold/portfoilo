@@ -1,5 +1,6 @@
 import Globe from '../../assets/globe.svg'
 import Card from '../Card/Card.component'
+import {projects} from '../Data/Data'
 import styles from './Project.module.css'
  
 export default function Project(){
@@ -30,7 +31,8 @@ export default function Project(){
                       <li className='hover:underline cursor-pointer '>Concepts</li>
                   </ul>
 
-                  <Card />
+                  <Card image={projects[0].image} projectName={projects[0].projectName} description={projects[0].description}/>
+                  
      </div>
     )
 }
