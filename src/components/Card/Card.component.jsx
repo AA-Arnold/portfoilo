@@ -4,7 +4,7 @@
 
 export default function Card({image,projectName,description }){
     return(
-        <div className="max-w-sm rounded overflow-hidden shadow-lg mx-auto my-8 dark:bg-purple-sec ">
+        <div className="max-w-sm rounded overflow-hidden shadow-lg m-4  dark:bg-purple-sec ">
             <img className="w-full" src={image} alt="Sunset in the mountains" />
             <div className="px-6 py-4">
                 <div className="font-bold text-xl mb-2 text-black dark:text-white flex justify-center">{projectName}</div>
