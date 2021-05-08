@@ -1,26 +1,24 @@
 import Card from '../Card/Card.component'
-import {projects} from '../Data/Data'
+// import {projects} from '../Data/Data'
 
 
-export default function CardList (){
+export default function CardList ({project}){
 
-    const cardArray = projects.map((project, i) => {
+    const cardComponent = project.map((prj, i) => {
         return (
         <Card 
-            key={projects[i].id} 
-            image={projects[i].image} 
-            projectName={projects[i].projectName} 
-            description={projects[i].description}
+            key={project[i].id} 
+            image={project[i].image} 
+            projectName={project[i].projectName} 
+            category={project[i].category}
+            description={project[i].description} 
         />
         )
     })
-
-    // console.log(projects[0].image)
-    return(
-            
+    return(          
         <div className="container my-12 mx-auto">
             <div className="flex flex-wrap -mx-1 lg:-mx-4">
-                {cardArray}
+                    {cardComponent}
             </div>
         </div>
     )

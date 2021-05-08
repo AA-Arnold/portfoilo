@@ -2,13 +2,13 @@
 
 
 
-export default function Card({image,projectName,description }){
+export default function Card({image,projectName,description,category }){
     return(
         <div className="max-w-sm rounded overflow-hidden shadow-lg m-4  dark:bg-purple-sec ">
             <img className="w-full" src={image} alt="Sunset in the mountains" />
             <div className="px-6 py-4">
                 <div className="font-bold text-xl mb-2 text-black dark:text-white flex justify-center">{projectName}</div>
-                <div className="font-bold text-black dark:text-purple-txt text-xl mb-2 text-black flex justify-center">Web Application</div>
+                <div className="font-bold text-black dark:text-purple-txt text-xl mb-2 text-black flex justify-center">{category}</div>
                 <p className="text-black dark:text-purple-txt ">
                     {description}
                 </p>
