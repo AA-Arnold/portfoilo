@@ -38,13 +38,13 @@ export default function Nav(){
     };
 
     return(
-        <header className='py-4 flex items-center px-5 w-full mx-auto fixed z-10 bg-white dark:bg-purple-sec'>
+        <header className='py-4 flex items-center px-5 w-full mx-auto fixed z-10 bg-purple-sec dark:bg-white'>
             <Link href='/'>
-                <a aria-current='page' className="flex items-center text-green-high  dark:text-purple-high font-bold text-lg mr-6 border:0">
+                <a aria-current='page' className="flex items-center  text-purple-high dark:text-green-high font-bold text-lg mr-6 border:0">
                     {/* <div className={`${styles.image} overflow-hidden inline-block w-10 h-10 mr-2 rounded-full border-2 border-green-high dark:border-purple-high`}>
                         <img src='arnold.jpeg' width='300px' alt="Profile picture of Amasoh Asama Arnold" className={`object-cover h-full ${styles.realImage}`}/>
                     </div> */}
-                    <div className="inline-block w-10 h-10 mr-2 rounded-full overflow-hidden flex-shrink-0 border-2 border-green-high dark:border-purple-high">
+                    <div className="inline-block w-10 h-10 mr-2 rounded-full overflow-hidden flex-shrink-0 border-2  border-purple-high dark:border-green-high">
                           <img src="arnold.jpeg" />
                       </div>
                     <span>Amasoh Arnold</span>
@@ -60,21 +60,21 @@ export default function Nav(){
                             
                             <li  className="hidden sm:inline-block">
                                 <Link href='/'>
-                                    <a onMouseOver={()=>setHomeState(<Home/>)} onMouseOut={()=>setHomeState('Home')} href="" className="blog border-b-2 font-bold border-transparent border-b-transparent text-green hover:border-light-secondary dark:text-white dark-hover:border-dark-secondary text-base transition-all transition-duration-300 transition duration-500 ease-in-out">
+                                    <a onMouseOver={()=>setHomeState(<Home/>)} onMouseOut={()=>setHomeState('Home')} href="" className="blog border-b-2 font-bold border-transparent border-b-transparent text-white hover:border-light-secondary dark:text-black dark-hover:border-dark-secondary text-base transition-all transition-duration-300 transition duration-500 ease-in-out">
                                        {homeState}
                                     </a>
                                 </Link>
                             </li>
                             <li className="hidden sm:inline-block">
                                 <Link href='/'>
-                                    <a href="" onMouseOver={()=>setAboutState(<About/>)} onMouseOut={()=>setAboutState('About')} className="blog border-b-2 font-bold border-transparent border-b-transparent text-green hover:border-light-secondary dark:text-white dark-hover:border-dark-secondary text-base transition-all transition-duration-300 transition duration-500 ease-in-out">
+                                    <a href="" onMouseOver={()=>setAboutState(<About/>)} onMouseOut={()=>setAboutState('About')} className="blog border-b-2 font-bold border-transparent border-b-transparent text-white hover:border-light-secondary dark:text-black dark-hover:border-dark-secondary text-base transition-all transition-duration-300 transition duration-500 ease-in-out">
                                        {aboutState}
                                     </a>
                                 </Link>
                             </li>
                             <li className="hidden sm:inline-block">
                                 <Link href='/'>
-                                    <a href="" onMouseOver={()=>setSkillsState(<Skills/>)} onMouseOut={()=>setSkillsState('Skills')} className="blog border-b-2 font-bold border-transparent border-b-transparent text-green hover:border-light-secondary dark:text-white dark-hover:border-dark-secondary text-base transition-all transition-duration-300 transition duration-500 ease-in-out">
+                                    <a href="" onMouseOver={()=>setSkillsState(<Skills/>)} onMouseOut={()=>setSkillsState('Skills')} className="blog border-b-2 font-bold border-transparent border-b-transparent text-white hover:border-light-secondary dark:text-black dark-hover:border-dark-secondary text-base transition-all transition-duration-300 transition duration-500 ease-in-out">
                                        {skillsState}
                                     </a>
                                 </Link>
@@ -82,21 +82,21 @@ export default function Nav(){
                                 
                                 <li className="hidden sm:inline-block">
                                     <Link href='/'>
-                                        <a href="" onMouseOver={()=>setProjectState(<Project/>)} onMouseOut={()=>setProjectState('Project')} className="blog border-b-2 font-bold border-transparent border-b-transparent text-green hover:border-light-secondary dark:text-white dark-hover:border-dark-secondary text-base transition-all transition-duration-300 transition duration-500 ease-in-out">
+                                        <a href="" onMouseOver={()=>setProjectState(<Project/>)} onMouseOut={()=>setProjectState('Project')} className="blog border-b-2 font-bold border-transparent border-b-transparent text-white hover:border-light-secondary dark:text-black dark-hover:border-dark-secondary text-base transition-all transition-duration-300 transition duration-500 ease-in-out">
                                         {projectState}
                                         </a>
                                     </Link>
                                 </li>
                                 <li className="hidden sm:inline-block">
                                     <Link href='/'>
-                                        <a href="" onMouseOver={()=>setBlogState(<Blog/>)} onMouseOut={()=>setBlogState('Blog')} className="blog border-b-2 font-bold border-transparent border-b-transparent text-green hover:border-light-secondary dark:text-white dark-hover:border-dark-secondary text-base transition-all transition-duration-300 transition duration-500 ease-in-out">
+                                        <a href="" onMouseOver={()=>setBlogState(<Blog/>)} onMouseOut={()=>setBlogState('Blog')} className="blog border-b-2 font-bold border-transparent border-b-transparent text-white hover:border-light-secondary dark:text-black dark-hover:border-dark-secondary text-base transition-all transition-duration-300 transition duration-500 ease-in-out">
                                         {blogState}
                                         </a>
                                     </Link>
                                 </li>
                                 <li className="hidden sm:inline-block">
                                     <Link href='/'>
-                                        <a href="" onMouseOver={()=>setContactState(<Contact/>)} onMouseOut={()=>setContactState('Contact')} className="blog border-b-2 font-bold border-transparent border-b-transparent text-green hover:border-light-secondary dark:text-white dark-hover:border-dark-secondary text-base transition-all transition-duration-300 transition duration-500 ease-in-out">
+                                        <a href="" onMouseOver={()=>setContactState(<Contact/>)} onMouseOut={()=>setContactState('Contact')} className="blog border-b-2 font-bold border-transparent border-b-transparent text-white hover:border-light-secondary dark:text-black dark-hover:border-dark-secondary text-base transition-all transition-duration-300 transition duration-500 ease-in-out">
                                         {contactState}
                                         </a>
                                     </Link>
@@ -119,61 +119,61 @@ export default function Nav(){
 
                      {/*-------------------------------- bottom nav ---------------------------------------*/}
 
-                    <ul className={`${styles.bottomNavigation} fixed bottom-0 left-0 z-20  bg-white dark:bg-purple-sec w-full flex items-center justify-evenly sm:hidden h-20`}>
-                        <li className='nav-bar-bottom-item text-green-high dark:text-purple-txt font-bold'>
+                    <ul className={`${styles.bottomNavigation} fixed bottom-0 left-0 z-20  bg-purple-sec  dark:bg-white w-full flex items-center justify-evenly sm:hidden h-20`}>
+                        <li className='nav-bar-bottom-item text-purple-txt dark:text-green-high font-bold'>
                             <Link href=''>
                                 <a className="flex flex-col items-center justify-center flex-nowrap transition transition-all duration-500 ease-in-out">
-                                    <Home stroke={(theme === 'dark') ? '#AF97BF' : '#0EB108'}/>
+                                    <Home stroke={(theme === 'dark') ? '#0EB108' : '#AF97BF'}/>
                                     <div>
                                         Home
                                     </div>
                                 </a>
                             </Link>
                         </li>
-                        <li className='nav-bar-bottom-item text-green-high dark:text-purple-txt font-bold'>
+                        <li className='nav-bar-bottom-item text-purple-txt dark:text-green-high font-bold'>
                             <Link href=''>
                                 <a className="flex flex-col items-center justify-center flex-nowrap transition transition-all duration-500 ease-in-out">
-                                    <About stroke={(theme === 'dark') ? '#AF97BF' : '#0EB108'}/>
+                                    <About stroke={(theme === 'dark') ? '#0EB108' : '#AF97BF'}/>
                                     <div>
                                         About
                                     </div>
                                 </a>
                             </Link>
                         </li>
-                        <li className='nav-bar-bottom-item text-green-high dark:text-purple-txt font-bold'>
+                        <li className='nav-bar-bottom-item text-purple-txt dark:text-green-high font-bold'>
                             <Link href=''>
                                 <a className="flex flex-col items-center justify-center flex-nowrap transition transition-all duration-500 ease-in-out">
-                                    <Skills stroke={(theme === 'dark') ? '#AF97BF' : '#0EB108'}/>
+                                    <Skills stroke={(theme === 'dark') ? '#0EB108' : '#AF97BF'}/>
                                     <div>
                                         Skills
                                     </div>
                                 </a>
                             </Link>
                         </li>
-                        <li className='nav-bar-bottom-item text-green-high dark:text-purple-txt font-bold'>
+                        <li className='nav-bar-bottom-item text-purple-txt dark:text-green-high font-bold'>
                             <Link href=''>
                                 <a className="flex flex-col items-center justify-center flex-nowrap transition transition-all duration-500 ease-in-out">
-                                    <Project stroke={(theme === 'dark') ? '#AF97BF' : '#0EB108'}/>
+                                    <Project stroke={(theme === 'dark') ? '#0EB108' : '#AF97BF'}/>
                                     <div>
                                         Projects
                                     </div>
                                 </a>
                             </Link>
                         </li>
-                        <li className='nav-bar-bottom-item text-green-high dark:text-purple-txt font-bold'>
+                        <li className='nav-bar-bottom-item text-purple-txt dark:text-green-high font-bold'>
                             <Link href=''>
                                 <a className="flex flex-col items-center justify-center flex-nowrap transition transition-all duration-500 ease-in-out">
-                                    <Blog stroke={(theme === 'dark') ? '#AF97BF' : '#0EB108'}/>
+                                    <Blog stroke={(theme === 'dark') ? '#0EB108' : '#AF97BF'}/>
                                     <div>
                                         Blog
                                     </div>
                                 </a>
                             </Link>
                         </li>
-                        <li className='nav-bar-bottom-item text-green-high dark:text-purple-txt font-bold'>
+                        <li className='nav-bar-bottom-item text-purple-txt dark:text-green-high font-bold'>
                             <Link href=''>
                                 <a className="flex flex-col items-center justify-center flex-nowrap transition transition-all duration-500 ease-in-out">
-                                    <Contact stroke={(theme === 'dark') ? '#AF97BF' : '#0EB108'}/>
+                                    <Contact stroke={(theme === 'dark') ? '#0EB108' : '#AF97BF'}/>
                                     <div>
                                         Contact
                                     </div>

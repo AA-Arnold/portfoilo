@@ -19,17 +19,17 @@ export default function Project(){
         setProject(projects)
     }
     const webClicked = () =>{
-        const webFliter = project.filter(project => project.category.includes('Web'))
-        setProject(webFliter)
+        const webFliter = projects
+        setProject(webFliter.filter(project => project.category.includes('Web')))
     }
     const mobileClicked = () =>{
-        const mobileFilter = project.filter(project => project.category.includes('Mobile'))
-        setProject(mobileFilter)
+        const mobileFilter = projects
+        setProject(mobileFilter.filter(project => project.category.includes('Mobile')))
     }
 
     return(
-     <div className='bg-white dark:bg-purple-pry lg:p-16  mb-24'>
-         <div className='flex justify-center text-black dark:text-white text-3xl font-bold mb-8 rounded-lg'>My Projects</div>
+     <div className=' dark:bg-white bg-purple-pry lg:p-16  mb-24'>
+         <div className='flex justify-center text-white dark:text-black text-3xl font-bold mb-8 rounded-lg'>My Projects</div>
         
 
                   {/* <div className="flex justify-center text-white space-x-4 ">
@@ -45,7 +45,7 @@ export default function Project(){
 
                   </div> */}
 
-                  <ul className="flex justify-center text-white text-sm space-x-2 md:space-x-4 md: ">
+                  <ul className="flex justify-center text-sm space-x-2 text-white dark:text-black md:space-x-4 md: ">
                       <li className='hover:underline cursor-pointer '  onClick={allClicked}>All</li>
                       <li className='hover:underline cursor-pointer' onClick={webClicked}>Web</li>
                       <li className='hover:underline cursor-pointer ' onClick={mobileClicked}>Mobile</li>

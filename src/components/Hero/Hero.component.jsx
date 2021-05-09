@@ -3,14 +3,14 @@ import styles from './Hero.module.css'
 
 export default function Hero(){
     return(
-     <main className='bg-white dark:bg-purple-pry  h-screen  '>
+     <main className='bg-purple-pry dark:bg-white  h-screen  '>
 
          <div className=' lg:flex justify-center pt-28'>
-            <div className='text-black dark:text-white text-2xl lg:text-4xl font-bold ml-8 '>
+            <div className='text-white dark:text-black text-2xl lg:text-4xl font-bold ml-8 '>
                 <span className='block mb-4'>Hi !<span className={styles.wave}>👋</span> ,</span>
                 <span className='block mb-4'>I'm Amasoh.A.Arnold,</span>
                 <span className='block mb-4'>Software Developer</span>
-                <span className='text-green-high dark:text-purple-high'>[</span><span className='font-light text-xl lg:text-2xl'>I like Frontend & Ui/UX</span><span className='text-green-high dark:text-purple-high'>]</span>
+                <span className='text-purple-high dark:text-green-high'>[</span><span className='font-light text-xl lg:text-2xl'>I like Frontend & Ui/UX</span><span className='text-purple-high dark:text-green-high'>]</span>
             </div>
             <div className='p-6 mt-20'>
                 <img src='hero.svg' width='700px' alt="An SVG of a male using a laptop" />
