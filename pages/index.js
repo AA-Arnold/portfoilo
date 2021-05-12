@@ -10,8 +10,8 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Snake</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Amasoh.A.Arnold</title>
+        <link rel="icon" href="/arnold.jpeg" />
       </Head>
 
       <Nav />

@@ -17,10 +17,20 @@ export default function About(){
                  <div className='mt-4'>
                      <p className='text-purple-high dark:text-black text-center'>Let's connect</p>
                      <ul className='text-purple-txt dark:text-white text-center'>
-                         <li>Gmail</li>
-                         <li>LinkedIn</li>
-                         <li>Github</li>
-                         <li>Twitter</li>
+
+                        <a target="_blank" href='https://amasoharnold@gmail.com/' rel="noopener noreferrer">
+                            <li>Gmail</li>
+                        </a>
+                        <a target="_blank" href='https://www.linkedin.com/in/amasoh-arnold/' rel="noopener noreferrer">
+                            <li>LinkedIn</li>
+                        </a>
+                        <a target="_blank" href='https://github.com/AA-Arnold' rel="noopener noreferrer">
+                            <li>Github</li>
+                        </a>
+                        <a target="_blank" href='https://twitter.com/AAATechie' rel="noopener noreferrer">
+                            <li>Twitter</li>
+                        </a>
+
                      </ul>
                  </div>
              </div>

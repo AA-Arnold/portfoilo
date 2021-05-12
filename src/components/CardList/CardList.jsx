@@ -12,6 +12,9 @@ export default function CardList ({project}){
             projectName={project[i].projectName} 
             category={project[i].category}
             description={project[i].description} 
+            tags={project[i].tags}
+            code={project[i].code}
+            live={project[i].live}
         />
         )
     })
