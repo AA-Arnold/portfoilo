@@ -3,7 +3,7 @@ import styles from './Hero.module.css'
 
 export default function Hero(){
     return(
-     <main className='bg-purple-pry dark:bg-white  h-screen  '>
+     <div className='bg-purple-pry dark:bg-white  h-screen  '>
 
          <div className=' lg:flex justify-center pt-28'>
             <div className='text-white dark:text-black text-2xl lg:text-4xl font-bold ml-8 '>
@@ -21,7 +21,7 @@ export default function Hero(){
          {/* example of adding svg  */}
          {/* <Heroo width={800} height={800} stroke={'green'} /> */}
 
-     </main>
+     </div>
     )
 }
 

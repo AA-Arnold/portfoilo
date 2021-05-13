@@ -21,7 +21,7 @@ export default function Skills(){
 
              {/*------------------------------------------ Right ----------------------------------- */}
 
-             <div className='md:w-2/4'>
+             <div className='md:w-2/4 pb-12 md:pb-0'>
                 <div className={styles.skillsCircleWrap}>
                         <div className={styles.skillsCircle}>
                             <div className={styles.skillOrbit}>

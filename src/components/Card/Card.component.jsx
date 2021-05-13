@@ -5,6 +5,7 @@ import Link from "next/link";
 
 
 export default function Card({key,image,projectName,description,category,code,live,tags }){
+    // console.log(key)
     return(
         <div className="max-w-sm rounded overflow-hidden shadow-lg m-4 bg-purple-sec dark:bg-white">
             <img className="w-full" src={image} alt="Sunset in the mountains" />

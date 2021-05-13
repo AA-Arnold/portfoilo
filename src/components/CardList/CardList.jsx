@@ -3,7 +3,6 @@ import Card from '../Card/Card.component'
 
 
 export default function CardList ({project}){
-
     const cardComponent = project.map((prj, i) => {
         return (
         <Card 
@@ -17,9 +16,10 @@ export default function CardList ({project}){
             live={project[i].live}
         />
         )
+      
     })
     return(          
-        <div className="container my-12 mx-auto">
+        <div className="container  mx-auto pb-10 md:pb-0">
             <div className="flex flex-wrap -mx-1 lg:-mx-4">
                     {cardComponent}
             </div>

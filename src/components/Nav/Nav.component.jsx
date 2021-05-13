@@ -82,7 +82,7 @@ export default function Nav(){
                                 
                                 <li className="hidden sm:inline-block">
                                     <Link href='/'>
-                                        <a href="" onMouseOver={()=>setProjectState(<Project/>)} onMouseOut={()=>setProjectState('Project')} className="blog border-b-2 font-bold border-transparent border-b-transparent text-white hover:border-light-secondary dark:text-black dark-hover:border-dark-secondary text-base transition-all transition-duration-300 transition duration-500 ease-in-out">
+                                        <a href="#Projects" onMouseOver={()=>setProjectState(<Project/>)} onMouseOut={()=>setProjectState('Project')} className="blog border-b-2 font-bold border-transparent border-b-transparent text-white hover:border-light-secondary dark:text-black dark-hover:border-dark-secondary text-base transition-all transition-duration-300 transition duration-500 ease-in-out">
                                         {projectState}
                                         </a>
                                     </Link>
