@@ -6,6 +6,7 @@ import About from "../src/components/About/About.component"
 import Skills from "../src/components/Skills/skills.component"
 import Project from "../src/components/Project/Project.component"
 import Blog from "../src/components/Blog/Blog.component"
+import Contact from "../src/components/Contact/Contact.component"
 
 
 
@@ -23,7 +24,8 @@ export default function Home() {
         <About />
         <Skills />
         <Project />
-        {/* <Blog /> */}
+        <Blog />
+        <Contact />
       </main>
 
 
