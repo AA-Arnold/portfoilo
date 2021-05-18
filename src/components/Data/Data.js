@@ -45,7 +45,7 @@ export const projects = [
         image: 'Screenshot (70).png',
         projectName: 'Howwart Dafino',
         category: 'Web Application',
-        description: "Howwart Dafino which is an insurance company website i was task to developing and designing during the period i was learning react it's my first reach website",
+        description: "Howwart Dafino which is an insurance company website i was task to developing and designing during the period i was learning react it's my first react website",
         tags: ['HTML', 'CSS', 'SASS', 'Javascript', 'React',],
         code: '',
         live: ''
