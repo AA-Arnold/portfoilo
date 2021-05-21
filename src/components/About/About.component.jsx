@@ -18,8 +18,8 @@ export default function About(){
                      <p className='text-purple-high dark:text-black text-center'>Let's connect</p>
                      <ul className='text-purple-txt dark:text-white text-center'>
 
-                        <a target="_blank" href='https://amasoharnold@gmail.com/' rel="noopener noreferrer">
-                            <li>Gmail</li>
+                        <a target="_blank" href='https://wa.link/uyswyl' rel="noopener noreferrer">
+                            <li>Whatsapp</li>
                         </a>
                         <a target="_blank" href='https://www.linkedin.com/in/amasoh-arnold/' rel="noopener noreferrer">
                             <li>LinkedIn</li>
