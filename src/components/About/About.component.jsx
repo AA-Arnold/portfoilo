@@ -19,7 +19,7 @@ export default function About(){
                      <ul className='text-purple-txt dark:text-white text-center'>
 
                         <a target="_blank" href='https://wa.link/uyswyl' rel="noopener noreferrer">
-                            <li>Whatsapp</li>
+                            <li>WhatsApp</li>
                         </a>
                         <a target="_blank" href='https://www.linkedin.com/in/amasoh-arnold/' rel="noopener noreferrer">
                             <li>LinkedIn</li>
