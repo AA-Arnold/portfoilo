@@ -11,7 +11,7 @@ export default function About(){
 
              <div className={`w-2/4  shadow-lg p-5 rounded-lg bg-purple-sec dark:bg-green-high ml-5 h-2/4 ${styles.animate} lg:w-1/4`}>
                  <img src='pin.png' alt='pin' className={styles.pin} />
-                 <div className='flex justify-center'>
+                 <div className='flex justify-center items-start'>
                      <img src='arnold.jpeg' alt='image of Arnold Amasoh' className='rounded-lg' />
                  </div>
                  <div className='mt-4'>
