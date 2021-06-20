@@ -35,13 +35,13 @@ export default class SimpleSlider extends Component {
                 <h2 className='mb-4'>WHAT CAN I DO?</h2>
                 <Slider {...settings}>
                     <div className=''>
-                        <img src='slider11.png' />
+                        <img alt='image of slider 1' src='slider11.png' />
                     </div>
                     <div>
-                        <img src='slider2.png' />
+                        <img alt='image of slider 2' src='slider2.png' />
                     </div>
                     <div>
-                        <img src='slider3.png' />
+                        <img alt='image of slider 3' src='slider3.png' />
                     </div>
                 </Slider>
             </div>

@@ -16,8 +16,11 @@ export default function CardList ({project}){
             live={project[i].live}
         />
         )
-      
+        console.log(project.code)
     })
+
+    
+
     return(          
         <div className="container  mx-auto pb-10 md:pb-0">
             <div className="flex flex-wrap -mx-1 lg:-mx-4">

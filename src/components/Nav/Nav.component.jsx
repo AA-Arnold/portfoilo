@@ -45,7 +45,7 @@ export default function Nav(){
                         <img src='arnold.jpeg' width='300px' alt="Profile picture of Amasoh Asama Arnold" className={`object-cover h-full ${styles.realImage}`}/>
                     </div> */}
                     <div className="inline-block w-10 h-10 mr-2 rounded-full overflow-hidden flex-shrink-0 border-2  border-purple-high dark:border-green-high">
-                          <img src="arnold.jpeg" />
+                          <img alt="Profile picture of Amasoh Asama Arnold" src="arnold.jpeg" />
                       </div>
                     <span>Amasoh Arnold</span>
                 </a> 
