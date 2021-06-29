@@ -19,9 +19,9 @@ const blogArticle = [
 export default function Blog(){
     return(
         <div className=' dark:bg-white bg-purple-pry lg:p-16 pb-10'>
-            <div className='flex justify-center text-white dark:text-black text-3xl font-bold rounded-lg'>
+            <h1 className='flex justify-center text-white dark:text-black text-3xl font-bold rounded-lg'>
                 Blog
-            </div>
+            </h1>
 
             <div className='text-purple-txt dark:text-black md:w-2/4 tracking-wider leading-loose p-4'>
                 Once in a while, I write blog articles. Here are the most recent onces:

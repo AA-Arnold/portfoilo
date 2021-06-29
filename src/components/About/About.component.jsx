@@ -4,7 +4,7 @@ import SimpleSlider from '../slider/slider'
 export default function About(){
     return(
      <div className='bg-purple-pry dark:bg-white pb-14 md:pb-0 lg:p-16'>
-         <div className='flex justify-center text-white dark:text-black text-3xl font-bold mb-8 rounded-lg'>About</div>
+         <h1 className='flex justify-center text-white dark:text-black text-3xl font-bold mb-8 rounded-lg'>About</h1>
          <div className='flex '>
 
              {/*------------------------------------- Left ----------------------------------------- */}
