@@ -15,7 +15,6 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>Amasoh.A.Arnold</title>
-        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name='keywords' content='portfolio, aaatechie, using react, software developer' />
         <meta name="description" content={
           `A software developer 👨‍💻 with Bsc in Computer 
@@ -23,7 +22,7 @@ export default function Home() {
          user experience and interfaces for web or mobile using react for
          frontend applications primarily`
         } />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
         <link rel="icon" href="/arnold.jpeg" />
       </Head>
 
