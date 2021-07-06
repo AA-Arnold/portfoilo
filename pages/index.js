@@ -16,6 +16,7 @@ export default function Home() {
       <Head>
         <title>Amasoh.A.Arnold</title>
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name='keywords' content='portfolio, aaatechie, using react, software developer' />
         <meta name="description" content={
           `A software developer 👨‍💻 with Bsc in Computer 
         Science who specializes in creating and designing intuitive
