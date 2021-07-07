@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Amasoh.A.Arnold</title>
+        <title>Amasoh.A.Arnold | software developer using react for frontend applications and deno  </title>
         <meta name='keywords' content='portfolio, aaatechie, using react, software developer' />
         <meta name="description" content={
           `A software developer 👨‍💻 with Bsc in Computer 
