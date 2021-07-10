@@ -18,18 +18,18 @@ export default function About(){
                      <p className='text-purple-high dark:text-black text-center'>Let's connect</p>
                      <ul className='text-purple-txt dark:text-white text-center'>
 
-                        <a target="_blank" href='https://wa.link/uyswyl' rel="noopener noreferrer">
-                            <li>WhatsApp</li>
-                        </a>
-                        <a target="_blank" href='https://www.linkedin.com/in/amasoh-arnold/' rel="noopener noreferrer">
-                            <li>LinkedIn</li>
-                        </a>
-                        <a target="_blank" href='https://github.com/AA-Arnold' rel="noopener noreferrer">
-                            <li>Github</li>
-                        </a>
-                        <a target="_blank" href='https://twitter.com/AAATechie' rel="noopener noreferrer">
-                            <li>Twitter</li>
-                        </a>
+                        
+                            <li><a target="_blank" href='https://wa.link/uyswyl' rel="noopener noreferrer">WhatsApp</a></li>
+                        
+                        
+                            <li><a target="_blank" href='https://www.linkedin.com/in/amasoh-arnold/' rel="noopener noreferrer">LinkedIn</a></li>
+                        
+                        
+                            <li><a target="_blank" href='https://github.com/AA-Arnold' rel="noopener noreferrer">Github</a></li>
+                        
+                        
+                            <li><a target="_blank" href='https://twitter.com/AAATechie' rel="noopener noreferrer">Twitter</a></li>
+                        
 
                      </ul>
                  </div>

@@ -10,7 +10,38 @@ export default function Hero(){
                 <span className='block mb-4'>Hi !<span className={styles.wave}>👋</span> ,</span>
                 <span className='block mb-4'>I'm Amasoh.A.Arnold,</span>
                 <span className='block mb-4'>Software Developer</span>
-                <span className='text-purple-high dark:text-green-high'>[</span><span className='font-light text-xl lg:text-2xl'>I like Frontend & Ui/UX</span><span className='text-purple-high dark:text-green-high'>]</span>
+                <div className={styles.content}>
+                    <div className={styles.content__container}>
+                        <p className={styles.content__container__text}>
+                        I like
+                        </p>
+
+                        <ul className={styles.content__container__list}>
+                        <li className={styles.content__container__list__item}>
+                            front-end &amp; UI/UX ✒
+                        </li>
+                        <li className={styles.content__container__list__item}>
+                            self-development 🤸‍♂️
+                        </li>
+                        <li className={styles.content__container__list__item}>
+                            data science &amp; AI 🤖
+                        </li>
+                        <li className={styles.content__container__list__item}>
+                            learning new things 🧾
+                        </li>
+                        <li className={styles.content__container__list__item}>
+                             tech generally 🌐
+                        </li>
+                        <li className={styles.content__container__list__item}>
+                             Art 🎨
+                        </li>
+                        <li className={styles.content__container__list__item}>
+                            networking 🤝
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+
             </div>
             <div className='p-6 mt-20'>
                 <img src='hero.svg' width='700px' alt="An SVG of a male using a laptop" />
