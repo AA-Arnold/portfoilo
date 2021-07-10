@@ -3,7 +3,7 @@ import styles from './Hero.module.css'
 
 export default function Hero(){
     return(
-     <div className='bg-purple-pry dark:bg-white  h-screen  '>
+     <div className='bg-purple-pry dark:bg-white  h-screen' id='home'>
 
          <div className=' lg:flex justify-center pt-28'>
             <div className='text-white dark:text-black text-2xl lg:text-4xl font-bold ml-8 '>

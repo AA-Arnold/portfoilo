@@ -28,7 +28,7 @@ export default function Project(){
     }
 
     return(
-     <div id='Projects' className=' dark:bg-white bg-purple-pry lg:p-16 '>
+     <div id='Projects' className=' dark:bg-white bg-purple-pry lg:p-16 ' id='projects'>
          <h1 className='flex justify-center text-white dark:text-black text-3xl font-bold mb-8 rounded-lg'>My Projects</h1>
         
 

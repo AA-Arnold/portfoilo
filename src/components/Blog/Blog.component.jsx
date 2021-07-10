@@ -18,7 +18,7 @@ const blogArticle = [
 
 export default function Blog(){
     return(
-        <div className=' dark:bg-white bg-purple-pry lg:p-16 pb-10'>
+        <div className=' dark:bg-white bg-purple-pry lg:p-16 pb-10' id='blog'>
             <h1 className='flex justify-center text-white dark:text-black text-3xl font-bold rounded-lg'>
                 Blog
             </h1>

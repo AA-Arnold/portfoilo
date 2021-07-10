@@ -1,6 +1,6 @@
 export default function Contact(){
     return(
-        <div className=' dark:bg-white bg-purple-pry lg:p-16 pb-24'>
+        <div className=' dark:bg-white bg-purple-pry lg:p-16 pb-24' id='contact'>
             
             <h1 className='flex justify-center text-white dark:text-black text-3xl font-bold rounded-lg'>
                 Contact
