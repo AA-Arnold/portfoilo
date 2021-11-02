@@ -11,6 +11,7 @@ class MyDocument extends Document {
                     <meta property="og:title" content="Arnold Amasoh" />
                     <meta property="og:description" content="A software developer 👨‍💻 with Bsc in Computer Science who specializes in creating and designing intuitive user experience and interfaces for web or mobile" />
                     <meta property="og:image" content="https://avatars.githubusercontent.com/u/53374970?v=4?s=400" />
+                    <meta name="image" property="og:image" content="https://res.cloudinary.com/aaatechie/image/upload/v1635848344/interviewFolder/Portfolio_screenshot_smavrk.png" itemprop="image" />
 
                     <meta name="twitter:image:src" content="https://avatars.githubusercontent.com/u/53374970?v=4?s=400" />
                     <meta name="twitter:card" content="summary" />
